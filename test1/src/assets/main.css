@@ -1,0 +1,62 @@
+@import './base.css';
+
+/* 导入Google字体 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* 全局样式 */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  min-height: 1024px;
+}
+
+#app {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Logo字体样式 */
+.font-logo {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Hero背景样式 */
+.hero-bg {
+  background-image: url('https://ai-public.mastergo.com/ai/img_res/6665279dba787045be4d3d1dd3574e71.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 艺术家网格项悬停效果 */
+.artist-grid-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 合作伙伴Logo悬停效果 */
+.partner-logo:hover {
+  opacity: 0.8;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  @apply bg-primary hover:bg-blue-800 text-white px-6 py-3 rounded-button transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-button transition-colors duration-300;
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+  @apply transition-shadow duration-300 hover:shadow-lg;
+}
+
+/* 文本渐变效果 */
+.text-gradient {
+  background: linear-gradient(135deg, #3B82F6, #10B981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
