@@ -3,10 +3,10 @@
 <template>
   <div class="bg-white text-gray-800 min-h-screen">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-gray-900 text-white z-50 shadow-md">
-      <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <nav class="fixed top-0 w-full bg-gray-900/60 backdrop-blur-md text-white z-50 shadow-md border-b border-white/10">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-          <span class="font-logo text-2xl">创意美术展览</span>
+          <span class="font-logo text-2xl tracking-wide">创意美术展览</span>
         </div>
         <div class="hidden md:flex space-x-8">
           <a href="#" class="hover:text-secondary transition-colors duration-300">首页</a>
@@ -15,27 +15,27 @@
           <a href="#" class="hover:text-secondary transition-colors duration-300">参观指南</a>
           <a href="#" class="hover:text-secondary transition-colors duration-300">新闻动态</a>
         </div>
-        <button class="!rounded-button bg-primary hover:bg-blue-800 text-white px-4 py-2 whitespace-nowrap transition-colors duration-300">
+        <button class="rounded-button bg-primary hover:bg-blue-800 text-white px-4 py-2 whitespace-nowrap transition-colors duration-300 shadow-sm hover:shadow">
           购票入口
         </button>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center pt-16">
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <section class="hero-bg h-screen flex items-center pt-20">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/10"></div>
       <div class="container mx-auto px-6 relative z-10 text-center">
-        <h1 class="text-5xl font-bold text-white mb-4">创意无限 · 美术新境</h1>
-        <p class="text-xl text-white mb-8 max-w-2xl mx-auto">探索当代艺术的边界，感受视觉与心灵的碰撞</p>
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg text-gradient">创意无限 · 美术新境</h1>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">探索当代艺术的边界，感受视觉与心灵的碰撞</p>
         <div class="mt-8">
-          <p class="text-white text-lg">展览时间：2025年10月15日 - 2025年12月15日</p>
-          <p class="text-white text-lg">展览地点：北京市朝阳区艺术中心</p>
+          <p class="text-white/90 text-lg">展览时间：2025年10月15日 - 2025年12月15日</p>
+          <p class="text-white/90 text-lg">展览地点：北京市朝阳区艺术中心</p>
         </div>
         <div class="flex justify-center space-x-4">
-          <button class="!rounded-button bg-primary hover:bg-blue-800 text-white px-6 py-3 whitespace-nowrap transition-colors duration-300">
+          <button class="rounded-button bg-primary hover:bg-blue-800 text-white px-6 py-3 whitespace-nowrap transition-colors duration-300 shadow-md hover:shadow-lg">
             立即购票
           </button>
-          <button class="!rounded-button bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 py-3 whitespace-nowrap transition-colors duration-300">
+          <button class="rounded-button bg-transparent border-2 border-white/80 text-white hover:bg-white hover:text-gray-900 px-6 py-3 whitespace-nowrap transition-colors duration-300">
             了解更多
           </button>
         </div>
@@ -47,7 +47,7 @@
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12">展览亮点</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fas fa-palette text-white text-2xl"></i>
             </div>
@@ -55,7 +55,7 @@
             <p class="text-gray-600 mb-4">沉浸式多媒体艺术空间，融合科技与美学</p>
             <a href="#" class="text-primary hover:underline font-medium">查看详情 →</a>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fas fa-user-graduate text-white text-2xl"></i>
             </div>
@@ -63,7 +63,7 @@
             <p class="text-gray-600 mb-4">汇聚国内外顶尖艺术家代表作品</p>
             <a href="#" class="text-primary hover:underline">认识艺术家 →</a>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <i class="fas fa-hands-helping text-white text-2xl"></i>
             </div>
@@ -82,7 +82,7 @@
         <div class="flex flex-col lg:flex-row gap-8">
           <div class="lg:w-2/3">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
                 <img src="https://ai-public.mastergo.com/ai/img_res/88e3e33fada62f409a405911c0680cb0.jpg" alt="新闻图片" class="w-full h-48 object-cover">
                 <div class="p-4">
                   <span class="text-sm text-gray-500">2023年10月15日</span>
@@ -91,7 +91,7 @@
                   <a href="#" class="text-primary text-sm mt-3 inline-block">阅读更多</a>
                 </div>
               </div>
-              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
                 <img src="https://ai-public.mastergo.com/ai/img_res/b707e7a4f4586370dd602cd2a2e5c3e9.jpg" alt="新闻图片" class="w-full h-48 object-cover">
                 <div class="p-4">
                   <span class="text-sm text-gray-500">2023年10月10日</span>
@@ -100,7 +100,7 @@
                   <a href="#" class="text-primary text-sm mt-3 inline-block">阅读更多</a>
                 </div>
               </div>
-              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
                 <img src="https://ai-public.mastergo.com/ai/img_res/8af34f797df0ec68244fdad0794c9c45.jpg" alt="新闻图片" class="w-full h-48 object-cover">
                 <div class="p-4">
                   <span class="text-sm text-gray-500">2023年10月5日</span>
@@ -109,7 +109,7 @@
                   <a href="#" class="text-primary text-sm mt-3 inline-block">阅读更多</a>
                 </div>
               </div>
-              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+              <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md">
                 <img src="https://ai-public.mastergo.com/ai/img_res/992be4b711fc1ce690a004c6f9229c1c.jpg" alt="新闻图片" class="w-full h-48 object-cover">
                 <div class="p-4">
                   <span class="text-sm text-gray-500">2023年9月28日</span>
@@ -124,26 +124,26 @@
             <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
               <h3 class="font-semibold text-lg mb-4">热门标签</h3>
               <div class="flex flex-wrap gap-2">
-                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300">#当代艺术</span>
-                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300">#互动装置</span>
-                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300">#青年艺术家</span>
-                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300">#数字艺术</span>
-                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300">#艺术教育</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300 shadow-sm">#当代艺术</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300 shadow-sm">#互动装置</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300 shadow-sm">#青年艺术家</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300 shadow-sm">#数字艺术</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition-colors duration-300 shadow-sm">#艺术教育</span>
               </div>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
               <h3 class="font-semibold text-lg mb-4">分享我们</h3>
               <div class="flex space-x-4">
-                <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="w-10 h-10 bg-sky-500 text-white rounded-full flex items-center justify-center">
+                <a href="#" class="w-10 h-10 bg-sky-500 text-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center">
+                <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
                   <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center">
+                <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
                   <i class="fab fa-youtube"></i>
                 </a>
               </div>
@@ -158,7 +158,7 @@
       <div class="container mx-auto px-6">
         <div class="flex justify-between items-center mb-12">
           <h2 class="text-3xl font-bold">艺术家风采</h2>
-          <button class="!rounded-button bg-primary hover:bg-blue-800 text-white px-4 py-2 whitespace-nowrap transition-colors duration-300">
+          <button class="rounded-button bg-primary hover:bg-blue-800 text-white px-4 py-2 whitespace-nowrap transition-colors duration-300 shadow-sm hover:shadow">
             查看全部艺术家
           </button>
         </div>
@@ -215,7 +215,7 @@
         <h2 class="text-3xl font-bold text-center mb-12">参观信息</h2>
         <div class="flex flex-col lg:flex-row gap-8">
           <div class="lg:w-1/2">
-            <div class="bg-gray-200 rounded-lg h-96 flex items-center justify-center overflow-hidden">
+            <div class="bg-gray-200 rounded-lg h-96 flex items-center justify-center overflow-hidden shadow-sm">
               <img src="https://ai-public.mastergo.com/gen_page/map_placeholder_1280x720.png" alt="展览馆地图" class="w-full h-full object-cover object-center">
             </div>
           </div>
@@ -356,8 +356,8 @@
             <h4 class="font-semibold mb-4">订阅资讯</h4>
             <p class="text-gray-400 text-sm mb-3">获取最新展览信息和艺术资讯</p>
             <div class="flex">
-              <input type="email" placeholder="您的邮箱地址" class="px-3 py-2 text-gray-800 text-sm w-full rounded-l focus:outline-none">
-              <button class="!rounded-button bg-primary hover:bg-blue-800 px-4 whitespace-nowrap transition-colors duration-300 rounded-l-none">
+              <input type="email" placeholder="您的邮箱地址" class="px-3 py-2 text-gray-800 text-sm w-full rounded-l focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-0">
+              <button class="rounded-button bg-primary hover:bg-blue-800 px-4 whitespace-nowrap transition-colors duration-300 rounded-l-none">
                 订阅
               </button>
             </div>
