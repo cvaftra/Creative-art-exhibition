@@ -9,6 +9,7 @@
     <PartnersSection />
     <AppFooter />
   </div>
+
 </template>
 
 <script>
